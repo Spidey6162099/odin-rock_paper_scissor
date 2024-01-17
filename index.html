@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
+<style>
+#choice_container{
+display: flex;
+justify-content: space-around;
+
+
+}
+button{
+    display: flex;
+    flex-grow: 1;
+    margin: 0px 100px;
+    min-width: max-content;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
     
+}
+h1{
+    text-align: center;
+    color: brown;
+    font-size: 60px;
+}
+p{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+</style>
+<h1>the choice is yours</h1>
+<div id="choice_container">
+<button id="rock">rock</button>
+<button id="paper">paper</button>
+<button id="scissor">scissor</button>
+</div>
+<div id="score_card">
+    <p id="rounds"></p>
+    <p id="scores_player"></p>
+    <p id="scores_computer"></p>
+    <p id="results"></p>
+</div>
 </body>
 </html>
